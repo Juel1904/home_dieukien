@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mời nhập số (1,2 hoặc 4)</h2>
+    <input id="inputnum" type="number" placeholder="1 or 2 or 4">
+    <button onclick="showresult()">show result</button>
+</body>
+</html>
+<script>
+    function showresult()
+    {
+        var inputnumber = document.getElementById("inputnum").value;
+        // console.log(inputnumber);
+        if(inputnumber == 1)
+        {
+            alert("tháng " + inputnumber + " có 31 ngày");
+        }
+        else if(inputnumber == 2)
+        {
+            alert("tháng " + inputnumber + " có 29 ngày");
+        }
+        else if(inputnumber == 4)
+        {
+            alert("tháng " + inputnumber + " có 30 ngày");
+        }
+        else
+        {
+            alert("bạn đã nhập sai yêu cầu đề bài");
+        }
+    }
+
+</script>

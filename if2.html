@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Mời nhập số:</h2>
+    <input id="inputnum" type="number" placeholder="number here">
+    <button onclick="showresult()">show result</button>
+</body>
+</html>
+<script>
+    function showresult()
+    {
+        var inputnumber = document.getElementById("inputnum").value;
+        if (inputnumber % 2 == 0)
+        {
+            if(inputnumber > 10)
+            {
+                alert("Số " + inputnumber + " bạn nhập vào thỏa điều kiện");
+            }
+            else
+            {
+                alert("Mời bạn nhập lại");
+            }
+        }
+        else
+        {
+            alert("Mời bạn nhập lại");
+        }
+        // console.log(inputnumber);
+        // if(inputnumber % 2 == 0)
+        // {
+        //     alert("Số " + inputnumber + " bạn nhập vào là số chẵn");
+        // }
+        // else 
+        // {
+        //     alert("Số " + inputnumber + " bạn nhập vào là số lẻ");
+        // }
+    }
+
+</script>
